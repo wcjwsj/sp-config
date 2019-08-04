@@ -1,6 +1,18 @@
 spring:
   application:
     name: item-service
+    
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: test
+    password: test123
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    
   rabbitmq:
     host: localhost
     port: 5672
